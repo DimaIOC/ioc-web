@@ -1,0 +1,16 @@
+{% extends 'landing/base.html' %}
+{% load static i18n %}
+{% get_available_languages as languages %}
+{% get_current_language as CUR_LANG_CODE %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+    {% include 'landing/include/header_tall.html' %}
+    {% include 'landing/include/team_catalog_block_copy.html' %}
+    {% include 'landing/include/footer.html' %}
+    {% include 'landing/include/popups_block.html' %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+<section class="team-catalog popup-gallery">
+    <div class="container">
+        <h2 class="team-catalog__title section-title">
+            <span>{% trans 'Керівництво' %}</span>
+        </h2>
+        <div class="teammeate">
+            {% for member in team %}
+                {% if member.stage == 1 %}
+                    <div class="teammeate__wrapper">
+                        <div class="teammeate__content">
+                            <a href="{{ member.image.url }}" status="{{ member.position }}" location="{% trans 'Киев' %}" email="{{ member.mail }}" class="teammeate__photo image-popup">
+                                <img src="{{ member.image.url }}" alt="photo"/>
+                            </a>
+                            <div class="teammeate__descr">
+                                <div class="teammeate__status">{{ member.position }}
+                                </div>
+                                <div class="teammeate__name">{{ member.memberfullname }}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="team-catalog__wrapper ">
+            {% for member in team %}
+                {% if member.stage != 1 %}
+                    <a href="{{ member.image.url }}" status="{{ member.position }}" location="Киев" email="{{ member.mail }}" class="team-catalog__item image-popup ">
+                        <div class="team-catalog__photo">
+                            <img src="{{ member.image.url }}" alt="photo"/>
+                        </div>
+                        <div class="team-catalog__info">
+                            <div class="team-catalog__status">{{ member.position }}</div>
+                            <div class="team-catalog__name">{{ member.memberfullname }}</div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

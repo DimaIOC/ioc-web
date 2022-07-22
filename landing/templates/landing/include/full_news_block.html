@@ -1,0 +1,31 @@
+{% load static %}
+{% load i18n %}
+<section class="news-catalog">
+    <div class="container">
+        <h2 class="news-catalog__title section-title">
+            <span>{% trans 'новини' %}</span>
+        </h2>
+        <ul class="news-catalog__wrapper">
+            {% for post in news %}
+                <li class="news-catalog__item">
+                    <a href="{{ post.get_absolute_url }}">
+                        {% if post.image %}
+                            <div class="news-catalog__photo">
+                                <img src="
+                                                  {{ post.image.url }}
+                                                  " alt="photo"/>
+                            </div>
+                        {% endif %}
+                        <div class="news-catalog__content">
+                            <div class="news-catalog__date">{{ post.get_clean_date }}</div>
+                            <div class="news-catalog__descr">
+                                {{ post.title }}
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</section>

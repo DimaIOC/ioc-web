@@ -1,0 +1,614 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-06 21:41+0300\n"
+"PO-Revision-Date: 2022-07-21 16:53-0551\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: dpioc/settings.py:110
+msgid "EN"
+msgstr "EN"
+
+#: dpioc/settings.py:111
+msgid "UA"
+msgstr "UA"
+
+#: landing/templates/landing/base.html:15
+#: landing/templates/landing/include/hero_block.html:83
+msgid "ДП \"ІОЦ МІНСОЦПОЛІТИКИ УКРАЇНИ\""
+msgstr "SE ICC"
+
+#: landing/templates/landing/include/about_block.html:10
+#: landing/templates/landing/include/footer.html:35
+#: landing/templates/landing/include/header_tall.html:34
+#: landing/templates/landing/include/header_tall.html:67
+#: landing/templates/landing/include/hero_block.html:35
+#: landing/templates/landing/include/hero_block.html:70
+#: landing/templates/landing/include/hero_block.html:88 landing/views.py:34
+msgid "Про нас"
+msgstr "About"
+
+#: landing/templates/landing/include/about_block.html:13
+msgid ""
+"Державне підприємство «Інформаційно обчислювальний центр Міністерства "
+"соціальной політики України»"
+msgstr ""
+"State Enterprise \"Information and Computing center of The Ministry of "
+"social policy of Ukraine\""
+
+#: landing/templates/landing/include/about_block.html:22
+#| msgid ""
+#| "Державне підприємство «Інформаційно обчислювальний центр Міністерства "
+#| "соціальной політики України»"
+msgid ""
+"Державне підприємство «Інформаційно-обчислювальний центр Міністерства "
+"соціальної політики України»"
+msgstr ""
+"State Enterprise \"Information and Computing center of The Ministry of "
+"social policy of Ukraine\""
+
+#: landing/templates/landing/include/about_block.html:23
+#, fuzzy
+#| msgid ""
+#| "перебуває у державній владі та у сфері управління Міністерства соціальної "
+#| "політики України."
+msgid ""
+"знаходиться у державній власності та належить до сфери управління "
+"Міністерства соціальної політики України."
+msgstr ""
+"is in the state power and in the sphere of management of the Ministry of "
+"Social Policy of Ukraine."
+
+#: landing/templates/landing/include/about_block.html:26
+#| msgid ""
+#| "Інформаційно-обчіслювальний центр – це розробка програмного забезпечення та "
+#| "інформаційних технологій, які забезпечують безпеку органів соціального "
+#| "забезпечення населення."
+msgid ""
+"Інформаційно-обчислювальний центр – це розробка програмного забезпечення та "
+"інформаційних технологій, що забезпечують діяльність органів соціального "
+"захисту населення."
+msgstr ""
+"The information and computing center is the development of software and "
+"information technologies that ensure the safety of social security agencies."
+
+#: landing/templates/landing/include/about_block.html:29
+#| msgid ""
+#| "Інформаційно-обчислювальний центр – це отримання українцями всіх видів "
+#| "соціальних доп, пільг, субсидій."
+msgid ""
+"Інформаційно-обчислювальний центр – це отримання українцями усіх видів "
+"соціальних допомог, пільг, субсидій."
+msgstr ""
+"The information and computing center is where Ukrainians receive all kinds "
+"of social benefits, benefits, and subsidies."
+
+#: landing/templates/landing/include/about_docs_block.html:6
+msgid "звітність"
+msgstr ""
+
+#: landing/templates/landing/include/about_team_block.html:6
+#: landing/templates/landing/include/about_team_block.html:32
+#: landing/templates/landing/include/footer.html:38
+#: landing/templates/landing/include/header_tall.html:37
+#: landing/templates/landing/include/header_tall.html:70
+#: landing/templates/landing/include/hero_block.html:38
+#: landing/templates/landing/include/hero_block.html:73 landing/views.py:66
+msgid "Наша команда"
+msgstr "Our team"
+
+#: landing/templates/landing/include/about_team_block.html:20
+msgid "Команда"
+msgstr "Team"
+
+#: landing/templates/landing/include/donate_block.html:11
+msgid "донат"
+msgstr "donate"
+
+#: landing/templates/landing/include/donate_block.html:15
+msgid "Ми просимо підтримки зараз, щоб мати можливість допомагати і надалі."
+msgstr "We are asking for your support now so we can continue to help."
+
+#: landing/templates/landing/include/donate_block.html:18
+msgid ""
+"Віримо у нашу Україну, її незалежність, наших мужніх людей та перемогу над "
+"загарбником!"
+msgstr ""
+"We believe in our Ukraine, its independence, our courageous people and "
+"victory over the invader!"
+
+#: landing/templates/landing/include/donate_block.html:22
+msgid "Реквизиты"
+msgstr "Props"
+
+#: landing/templates/landing/include/donate_block.html:23
+msgid "Допомогти онлайн"
+msgstr "Help online"
+
+#: landing/templates/landing/include/donate_eservice_block.html:11
+#: landing/templates/landing/include/e_services_block.html:6
+#: landing/views.py:44
+msgid "є-сервіси"
+msgstr "e-service"
+
+#: landing/templates/landing/include/donate_eservice_block.html:15
+msgid ""
+"Електро́нний се́рвіс, е-сервіс (англ. e-service) — всі види послуг і "
+"сервісу, які надаються за допомогою електронних засобів (як приклад, за "
+"допомогою Інтернету)."
+msgstr ""
+"Electronic service, e-service — all types of services and services that are "
+"provided using electronic means (for example, using the Internet)."
+
+#: landing/templates/landing/include/donate_eservice_block.html:19
+msgid "Далі"
+msgstr "Next"
+
+#: landing/templates/landing/include/e_services_block.html:14
+msgid "Інформація щодо перебування на обліку та повноти наповнення"
+msgstr "Information on registration and completeness of filling"
+
+#: landing/templates/landing/include/e_services_block.html:15
+msgid "інформації про осіб в Централізованому банку даних з проблем"
+msgstr "information about persons in the Centralized data bank for problems"
+
+#: landing/templates/landing/include/e_services_block.html:16
+msgid "інвалідності для придбання квитків на пільгових умовах"
+msgstr "disability to purchase tickets on preferential terms"
+
+#: landing/templates/landing/include/e_services_block.html:24
+msgid "Інформація про стан субсидії в домогосподарстві за даними Єдиного"
+msgstr ""
+"Information about the state of the subsidy in the household according to the"
+" Unified data"
+
+#: landing/templates/landing/include/e_services_block.html:25
+msgid ""
+"державного реєстру отримувачів субсидій Міністерства соціальної політики"
+msgstr ""
+"the state register of recipients of subsidies of the Ministry of Social "
+"Policy"
+
+#: landing/templates/landing/include/e_services_block.html:33
+msgid "Система «Облік студентів (курсантів) вищих навчальних закладів,"
+msgstr ""
+"System \"Registration of students (cadets) of higher educational "
+"institutions,"
+
+#: landing/templates/landing/include/e_services_block.html:34
+msgid "які отримують соціальну стипендію»"
+msgstr "who receive a social scholarship\""
+
+#: landing/templates/landing/include/e_services_block.html:42
+msgid "Електронна соціальна послуга відшкодування вартості послуги з"
+msgstr ""
+"Electronic social service of reimbursement of the cost of the service with"
+
+#: landing/templates/landing/include/e_services_block.html:43
+msgid "догляду за дитиною до трьох років «Муніципальна няня»,"
+msgstr "care for a child up to three years old \"Municipal Nanny\","
+
+#: landing/templates/landing/include/e_services_block.html:51
+msgid "Програмний комплекс «Інтегрована Інформаційна Система «Соціальна"
+msgstr "Software complex \"Integrated Information System \"Social"
+
+#: landing/templates/landing/include/e_services_block.html:52
+msgid "громада». Навчально-методичні матеріали ПК «ІІС «Соціальна громада»"
+msgstr ""
+"community\". Educational and methodological materials of PC \"IIS \"Social "
+"Community\""
+
+#: landing/templates/landing/include/e_services_block.html:60
+msgid "Державний реєстр майнових об’єктів оздоровлення та відпочинку дітей"
+msgstr ""
+"State register of property facilities for children's health and recreation"
+
+#: landing/templates/landing/include/e_services_block.html:68
+msgid "Автоматизована система реєстрації гуманітарної допомоги"
+msgstr "Automated humanitarian aid registration system"
+
+#: landing/templates/landing/include/e_services_block.html:76
+msgid ""
+"Електронна послуга допомога на дітей фізичним особам – підприємцям, які "
+"обрали спрощену систему оподаткування і належать до першої та другої групи "
+"платників єдиного податку"
+msgstr ""
+"Child benefit electronic service for individuals - entrepreneurs who have "
+"chosen a simplified taxation system and belong to the first and second "
+"groups of single tax payers"
+
+#: landing/templates/landing/include/footer.html:23
+#: landing/templates/landing/include/header_tall.html:22
+#: landing/templates/landing/include/header_tall.html:55
+#: landing/templates/landing/include/hero_block.html:23
+#: landing/templates/landing/include/hero_block.html:58
+#: landing/templates/landing/include/services_block.html:6
+msgid "Наші послуги"
+msgstr "Services"
+
+#: landing/templates/landing/include/footer.html:26
+#: landing/templates/landing/include/header_tall.html:25
+#: landing/templates/landing/include/header_tall.html:58
+#: landing/templates/landing/include/hero_block.html:26
+#: landing/templates/landing/include/hero_block.html:61
+msgid "Донейшн"
+msgstr "Donate"
+
+#: landing/templates/landing/include/footer.html:29
+msgid "Питання- Відповідь"
+msgstr "FAQ"
+
+#: landing/templates/landing/include/footer.html:32
+#: landing/templates/landing/include/popups_block.html:219
+msgid "Інформація"
+msgstr "Info"
+
+#: landing/templates/landing/include/footer.html:41
+msgid "Блог"
+msgstr "News"
+
+#: landing/templates/landing/include/footer.html:48
+msgid "Приймальня:"
+msgstr "Reception:"
+
+#: landing/templates/landing/include/footer.html:52
+msgid "Технічна підтримка:"
+msgstr "Technical support:"
+
+#: landing/templates/landing/include/footer.html:56
+msgid "Телефон:"
+msgstr "phone"
+
+#: landing/templates/landing/include/footer.html:64
+msgid "2022 ДП \"ІОЦ Мінсоцполітики України\""
+msgstr "2022 SE \"ICC OF THE MINISTRY OF SOCIAL POLICY\""
+
+#: landing/templates/landing/include/full_news_block.html:6
+#: landing/templates/landing/include/news_block.html:7
+#: landing/templates/landing/include/single_news_block.html:6
+msgid "новини"
+msgstr "news"
+
+#: landing/templates/landing/include/header_tall.html:28
+#: landing/templates/landing/include/header_tall.html:61
+#: landing/templates/landing/include/hero_block.html:29
+#: landing/templates/landing/include/partners_block.html:6
+msgid "Наші партнери"
+msgstr "Partners"
+
+#: landing/templates/landing/include/header_tall.html:31
+#: landing/templates/landing/include/header_tall.html:64
+#: landing/templates/landing/include/hero_block.html:32
+#: landing/templates/landing/include/hero_block.html:67
+#| msgid "Питання- Відповідь"
+msgid "Питання - Відповідь"
+msgstr "FAQ"
+
+#: landing/templates/landing/include/header_tall.html:47
+#: landing/templates/landing/include/header_tall.html:74
+#: landing/templates/landing/include/hero_block.html:50
+#: landing/templates/landing/include/hero_block.html:77
+msgid "єДопомога"
+msgstr "e-Dopomoga"
+
+#: landing/templates/landing/include/hero_block.html:85
+msgid ""
+"Державне підприємство «інформаційно обчислювальний центр Міністерства "
+"соціальной політики України»"
+msgstr ""
+"State Enterprise \"Information and Computing center of The Ministry of "
+"social policy of Ukraine\""
+
+#: landing/templates/landing/include/hero_block.html:87
+msgid "Створення. Впровадження. Підтримка..."
+msgstr "Building. Implementation. Supporting..."
+
+#: landing/templates/landing/include/news_block.html:10
+msgid "Всі новини"
+msgstr "All news"
+
+#: landing/templates/landing/include/popups_block.html:14
+msgid "ДОНАТ"
+msgstr "DONAT"
+
+#: landing/templates/landing/include/popups_block.html:17
+msgid ""
+"Зараз Україна переживає найстрашніше випробування за всю свою незалежність "
+"–повномасштабну війну з боку Російської Федерації, яка призвела до загибелі "
+"людей,поранень і масового переміщення цивільного населення по території "
+"країни та в сусіднікраїни. Мільйони українців залишились без житла, грошей, "
+"одягу, їжі та інших елементарнихречей."
+msgstr ""
+"Currently, Ukraine is experiencing the most terrible test for its entire "
+"independence - a full-scale war on the part of the Russian Federation, which"
+" led to the death of people, injuries and mass displacement of the civilian "
+"population throughout the country and to neighboring countries. Millions of "
+"Ukrainians were left without housing, money, clothes, food and other basic "
+"things."
+
+#: landing/templates/landing/include/popups_block.html:20
+msgid ""
+"Проте Україна та світ не залишають їх наодинці зі своїм горем. Гуманітарна "
+"допомога активно надходить від вітчизняних і від іноземних донорів, а "
+"держава безперервно продовжує надавати українцям пільги та виплачувати "
+"державні соціальні допомоги."
+msgstr ""
+"However, Ukraine and the world do not leave them alone with their grief. "
+"Humanitarian aid is actively coming from domestic and foreign donors, and "
+"the state continues to provide Ukrainians with benefits and pay state social"
+" benefits."
+
+#: landing/templates/landing/include/popups_block.html:23
+msgid ""
+"Державне підприємство «Інформаційно-обчислювальний центр Міністерства "
+"соціальної політики України» (далі – Підприємство), що знаходиться у місті "
+"Київ, єдине Підприємство, що здійснює важливу функцію з програмно-"
+"технологічного забезпечення роботи органів соціального захисту населення по "
+"усій території України. Працівники Підприємства, щодня ризикуючи життям, "
+"добросовісно виконують свої обов’язки, недивлячись на те, що місто Київ "
+"знаходиться під постійними ракетними обстрілами. Завдяки роботі "
+"Підприємства, мільйони українців щодня отримують соціальні виплати, "
+"допомоги, пільги."
+msgstr ""
+"The State Enterprise \"Information and Computing Center of the Ministry of "
+"Social Policy of Ukraine\" (hereinafter - the Enterprise), located in the "
+"city of Kyiv, is the only Enterprise that performs an important function of "
+"software and technological support for the work of social protection bodies "
+"throughout Ukraine. Employees of the Enterprise, risking their lives every "
+"day, conscientiously perform their duties, regardless of the fact that the "
+"city of Kyiv is under constant rocket fire. Thanks to the work of the "
+"Enterprise, millions of Ukrainians receive social benefits, assistance, and "
+"benefits every day."
+
+#: landing/templates/landing/include/popups_block.html:29
+msgid "Кошти, з благодійного рахунку будуть спрямовані на:"
+msgstr "Funds from the charity account will be directed to:"
+
+#: landing/templates/landing/include/popups_block.html:37
+msgid "Закупівлю серверного обладнання"
+msgstr "Purchase of server equipment"
+
+#: landing/templates/landing/include/popups_block.html:45
+msgid ""
+"Створення та підтримку функціонування інформаційних технологій "
+"соціальногоспрямування"
+msgstr ""
+"Development, implementation and maintenance of applied social software"
+
+#: landing/templates/landing/include/popups_block.html:54
+msgid "Матеріальну підтримку працівників, які працюють в умовах війни"
+msgstr "Material support for workers working in war conditions"
+
+#: landing/templates/landing/include/popups_block.html:61
+msgid "Благодійну фінансову допомогу можна перерахувати на такі рахунки:"
+msgstr ""
+"Charitable financial assistance can be transferred to the following "
+"accounts:"
+
+#: landing/templates/landing/include/popups_block.html:65
+msgid "Для зарахування коштів у національній валюті:"
+msgstr "To deposit funds in national currency:"
+
+#: landing/templates/landing/include/popups_block.html:101
+msgid "Для зарахування коштів у EUR:"
+msgstr "To deposit funds in EUR:"
+
+#: landing/templates/landing/include/popups_block.html:140
+msgid "Для зарахування коштів у USD:"
+msgstr "To deposit funds in USD:"
+
+#: landing/templates/landing/include/popups_block.html:178
+msgid "Дякуємо за допомогу:"
+msgstr "Thank you for your help:"
+
+#: landing/templates/landing/include/popups_block.html:193
+msgid "Благодійний фонд Приватбанку «Допомагати просто», Україна"
+msgstr "Charitable fund of Privatbank \"It's easy to help\", Ukraine"
+
+#: landing/templates/landing/include/popups_block.html:202
+msgid "Бельгія"
+msgstr "Belgium"
+
+#: landing/templates/landing/include/popups_block.html:222
+msgid ""
+"Відповідно до статуту державного підприємства «Інформаційно-обчислювальний "
+"центр Міністерства соціальної політики України» (додатково - Підприємство "
+"застосування є державним підприємством, яке займається господарською "
+"(комерційною) діяльністю, яке є у розробці та впровадженні прикладних "
+"програмних продуктів, наданні послуг з виготовлення даних із застосуванням "
+"прикладного програмного забезпечення та ін. На виконання відповідних "
+"господарських договорів (зокрема, але не впроваджених із Міністерством "
+"соціальної політики України, Пенсійним фондом України, як замовниками в "
+"рамках таких договорів), Підприємство, зокрема, розробляє програмне "
+"забезпечення, яке використовує замовниками для виконання/реалізації завдань,"
+" покладених на них законодавством України, що вимагає, як правило, "
+"збір/обробку певної інформації/особистих даних (за допомогою такого "
+"програмного забезпечення)."
+msgstr ""
+"In accordance with the charter of the state enterprise \"Information and "
+"Computing Center of the Ministry of Social Policy of Ukraine\" (additionally"
+" - the Application Enterprise is a state enterprise engaged in economic "
+"(commercial) activity, which is in the development and implementation of "
+"applied software products, provision of data production services using "
+"applied software, etc. For the implementation of relevant business contracts"
+" (in particular, but not implemented with the Ministry of Social Policy of "
+"Ukraine, the Pension Fund of Ukraine, as customers within the framework of "
+"such contracts), the Company, in particular, develops software that is used "
+"by customers to perform/realize tasks , imposed on them by the legislation "
+"of Ukraine, which usually requires the collection/processing of certain "
+"information/personal data (with the help of such software)."
+
+#: landing/templates/landing/include/popups_block.html:227
+msgid ""
+"При цьому слід зазначити, що Підприємство не є в цьому випадку її власником "
+"та/або розпорядником цієї інформації/особистих даних, а відповідно не має "
+"правових підстав для надання. Окремо звертаємо увагу, що відповідно до ч.2 "
+"ст. 5 Закону України «Про захист персональних даних» персональні дані, крім "
+"неособливих персональних даних, за режимом доступу є дані з обмеженим "
+"доступом."
+msgstr ""
+"At the same time, it should be noted that the Company is not the owner "
+"and/or manager of this information/personal data in this case, and "
+"accordingly has no legal grounds for providing it. Separately, we draw "
+"attention to the fact that in accordance with Part 2 of Art. 5 of the Law of"
+" Ukraine \"On the Protection of Personal Data\", personal data, except for "
+"non-personal data, according to the access mode, are data with limited "
+"access."
+
+#: landing/templates/landing/include/popups_block.html:232
+msgid ""
+"відповідає до ч. 2 ст. 20 Закону України «Про інформацію» будь-яка "
+"інформація є відкритою, крім того, що віднесена законом до інформації з "
+"обмеженим доступом. порівняно положень ст. 21 України «Про інформацію» є "
+"конфіденційною інформацією з обмеженим доступом, таємна та службова "
+"інформація."
+msgstr ""
+"corresponds to Part 2 of Art. 20 of the Law of Ukraine \"On Information\", "
+"any information is open, except for what is classified by law as information"
+" with limited access. compared to the provisions of Art. 21 of Ukraine "
+"\"About information\" is confidential information with limited access, "
+"secret and official information."
+
+#: landing/templates/landing/include/popups_block.html:237
+msgid ""
+"Таким чином, конфіденційною є про фізичну особу, а також доступна інформація"
+" до обмеженої фізичної чи юридичної особи, крім суб’єктів владних "
+"повноважень. Конфіденційна інформація може розширюватися за бажанням "
+"(згодою) відповідної особи у визначеному нею порядку відповідно до "
+"передбачених умовами, а також в інших випадках, визначених законом."
+msgstr ""
+"Thus, information about a natural person is confidential, as well as "
+"information available to a limited natural or legal person, except for "
+"subjects of authority. Confidential information can be expanded at the "
+"request (consent) of the relevant person in the order determined by him in "
+"accordance with the stipulated conditions, as well as in other cases "
+"determined by law."
+
+#: landing/templates/landing/include/popups_block.html:242
+msgid ""
+"Для отримання інформації про фізичну особу та/або іншу інформацію необхідно "
+"звертатися до власників та/або розпорядників цієї інформації. Одночасно "
+"повідомляємо, що Підприємство не надає громадянам та юридичним особам "
+"консультаційних послуг щодо та результатів обробки персональних даних у "
+"розробленому Підприємством програмного забезпечення забезпечення, що так чи "
+"інакше пов’язане з персональними даними або виключено із обмеженим доступом."
+msgstr ""
+"To obtain information about a natural person and/or other information, it is"
+" necessary to contact the owners and/or managers of this information. At the"
+" same time, we inform you that the Company does not provide citizens and "
+"legal entities with consulting services regarding and the results of "
+"personal data processing in software developed by the Company, which is in "
+"one way or another related to personal data or excluded with limited access."
+
+#: landing/templates/landing/include/question_block.html:6
+msgid "питання-відповіді"
+msgstr "FAQ"
+
+#: landing/templates/landing/include/question_block.html:22
+msgid "Відповідь"
+msgstr "Answer"
+
+#: landing/templates/landing/include/services_block.html:14
+#: landing/templates/landing/include/services_works_block.html:14
+msgid ""
+"Розроблення, впровадження и супроводження прикладного программного "
+"забезпечення соціального спрямування"
+msgstr ""
+"Development, implementation and maintenance of applied social software"
+
+#: landing/templates/landing/include/services_block.html:20
+#: landing/templates/landing/include/services_works_block.html:20
+msgid "Тестування и Ведення в эксплуатации програмного обеспечения"
+msgstr "Software testing and commissioning"
+
+#: landing/templates/landing/include/services_block.html:26
+#: landing/templates/landing/include/services_works_block.html:26
+msgid ""
+"Надання доступа к програмному заобеспечению органов соціального захисту "
+"населення"
+msgstr "Providing access to the software of social protection bodies"
+
+#: landing/templates/landing/include/services_block.html:32
+#: landing/templates/landing/include/services_works_block.html:32
+msgid ""
+"Обработка информации и начисление соціальних дотаций, пособий, субсидий"
+msgstr ""
+"Information processing and calculation of social grants, allowances, "
+"subsidies"
+
+#: landing/templates/landing/include/services_block.html:38
+#: landing/templates/landing/include/services_works_block.html:38
+msgid ""
+"Доопрацювання и вдосконалення програмного замораживания відповідно до "
+"поточных змін чинного законодавства"
+msgstr ""
+"Refinement and improvement of software freezing in accordance with current "
+"changes in current legislation"
+
+#: landing/templates/landing/include/services_block.html:44
+#: landing/templates/landing/include/services_works_block.html:44
+msgid "Супроводження и ведення державных реєстрів, інформаційних систем"
+msgstr "Support and maintenance of state registers, information systems"
+
+#: landing/templates/landing/include/services_works_block.html:6
+msgid "Як це працює?"
+msgstr "How does it work?"
+
+#: landing/templates/landing/include/team_catalog_block.html:5
+#: landing/templates/landing/include/team_catalog_block_copy.html:6
+msgid "Керівництво"
+msgstr "LEADERSHIP"
+
+#: landing/templates/landing/include/team_catalog_block_copy.html:13
+msgid "Киев"
+msgstr ""
+
+#: landing/views.py:19
+msgid "Головна"
+msgstr "Main"
+
+#: landing/views.py:50
+msgid "Новини"
+msgstr "News"
+
+#~ msgid "Київ"
+#~ msgstr "Kyiv"
+
+#, fuzzy
+#~ msgid "наші партнери"
+#~ msgstr "Partners"
+
+#~ msgid "Директор"
+#~ msgstr "Director"
+
+#~ msgid "Перший заступник директора"
+#~ msgstr "First deputy director"
+
+#~ msgid "Заступник директора"
+#~ msgstr "First deputy director"
+
+#~ msgid "Головний бухгалтер"
+#~ msgstr "Chief Accountant"
+
+#~ msgid "Спеціаліст з підбору персоналу"
+#~ msgstr "HR"
+
+#~ msgid "Менеджер проектів"
+#~ msgstr "Project manager"
+
+#~ msgid "Головний юрист з питань соціального забезпечення"
+#~ msgstr "Chief lawyer on social security issues"

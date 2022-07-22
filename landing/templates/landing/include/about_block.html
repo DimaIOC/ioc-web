@@ -1,0 +1,35 @@
+{% load static i18n %}
+<section class="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__img">
+                <img src="{% static 'landing/img/about-figure.svg' %}" alt="big-logo"/>
+            </div>
+            <div class="about__content">
+                <h2 class="about__title section-title">
+                    <span>{% trans 'Про нас' %}</span>
+                </h2>
+                <div class="about__subtitle">
+                    {% trans 'Державне підприємство «Інформаційно обчислювальний центр Міністерства соціальной політики України»' %}
+                </div>
+                <div class="about__mob-img">
+                    <img src="
+                                                                                    {% static 'landing/img/about-figure.svg' %}
+                                                                                    " alt="big-logo"/>
+                </div>
+                <div class="about__text">
+                    <p>
+                        {% trans 'Державне підприємство «Інформаційно-обчислювальний центр Міністерства соціальної політики України»' %}
+                        {% trans 'знаходиться у державній власності та належить до сфери управління Міністерства соціальної політики України.' %}
+                    </p>
+                    <p>
+                        {% trans 'Інформаційно-обчислювальний центр – це розробка програмного забезпечення та інформаційних технологій, що забезпечують діяльність органів соціального захисту населення.' %}
+                    </p>
+                    <p>
+                        {% trans 'Інформаційно-обчислювальний центр – це отримання українцями усіх видів соціальних допомог, пільг, субсидій.' %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

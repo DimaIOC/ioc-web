@@ -1,0 +1,24 @@
+{% load static %}
+{% load i18n %}
+<section class="donat e-service">
+    <div class="container">
+        <div class="donat__wrapper">
+            <div class="donat__image">
+                <img src="{% static 'landing/img/eserice2.png' %}" alt="e-services"/>
+            </div>
+            <div class="donat__content">
+                <h2 class="donat__title section-title">
+                    <span>{% trans 'є-сервіси' %}</span>
+                </h2>
+                <div class="donat__text">
+                    <p>
+                        {% trans 'Електро́нний се́рвіс, е-сервіс (англ. e-service) — всі види послуг і сервісу, які надаються за допомогою електронних засобів (як приклад, за допомогою Інтернету).' %}
+                    </p>
+                </div>
+                <div class="donat__btns">
+                    <a href="{% url 'landing:eservices' %}" class="donat__btn btn">{% trans 'Далі' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

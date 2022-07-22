@@ -1,0 +1,22 @@
+{% extends 'landing/base.html' %}
+{% load static i18n %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+
+    {% include 'landing/include/header_tall.html' %}
+    {% include 'landing/include/about_block.html' %}
+    {% include 'landing/include/services_block.html' %}
+    {% include 'landing/include/donate_eservice_block.html' %}
+    {% include 'landing/include/partners_block.html' %}
+    {% include 'landing/include/about_team_block.html' %}
+    {% include 'landing/include/about_docs_block.html' %}
+    {% include 'landing/include/footer.html' %}
+    {% include 'landing/include/popups_block.html' %}
+
+
+{% endblock %}

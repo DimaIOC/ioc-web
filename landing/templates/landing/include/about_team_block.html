@@ -1,0 +1,55 @@
+{% load i18n %}
+{% load static %}
+<section class="team">
+    <div class="container">
+        <h2 class="team__title section-title">
+            <span>{% trans 'Керівництво' %}</span>
+        </h2>
+        <div class="team__wrapper">
+            <div class="team__slider swiper">
+                <div class="swiper-wrapper">
+                    {% for member in team %}
+                        <div class="swiper-slide team-item">
+                            <img src="{{ member.image.url }}" alt="photo"/>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="{% url 'landing:team' %}" class="team__link btn">{% trans 'Керівництво' %}</a>
+            <div class="team-button-prev">
+                <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow"/>
+            </div>
+            <div class="team-button-next">
+                <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="team">
+    <div class="container">
+      <h2 class="team__title section-title"><span>{% trans 'Наша команда' %}</span></h2>
+      <div class="team__wrapper">
+        <div class="team__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide team-slide">
+              {% for members in team %}
+              <div class="team-item">
+                <img src="{{members.image.url}}" alt="photo" />
+              </div>
+              {% endfor%}
+            </div>
+
+          </div>
+        </div>
+        <a href="{% url 'landing:team'%}" class="team__link btn">Команда</a>
+        <div class="team-button-prev">
+          <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow" />
+        </div>
+        <div class="team-button-next">
+          <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow" />
+        </div>
+      </div>
+    </div>
+  </section> -->

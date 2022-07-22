@@ -1,0 +1,19 @@
+{% load static i18n %}
+<section class="statistic">
+    <div class="container">
+        <div class="statistic__wrapper">
+            {% for static in statics %}
+            <div class="statistic__item">
+                <div class="statistic__icon">
+                    <img src="{{static.image.url}}" alt="avatar"/>
+                </div>
+                <div class="statistic__val">{{static.metric}}</div>
+                <div class="statistic__descr">
+                    {{static.title}}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

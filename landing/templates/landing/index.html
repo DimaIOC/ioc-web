@@ -1,0 +1,20 @@
+{% extends 'landing/base.html' %}
+{% load static i18n%}
+
+{% block title %}{{title}}{% endblock %}
+
+
+{% block content %}
+
+{% include 'landing/include/hero_block.html' %}
+{% include 'landing/include/statistic_block.html' %}
+{% include 'landing/include/services_block.html' %}
+{% include 'landing/include/donate_block.html' %}
+{% include 'landing/include/partners_block.html' %}
+{% include 'landing/include/question_block.html' %}
+{% include 'landing/include/news_block.html' %}
+{% include 'landing/include/footer.html' %}
+{% include 'landing/include/popups_block.html' %}
+       
+
+{% endblock %}

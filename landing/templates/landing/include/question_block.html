@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+<section id="questions" class="questions">
+    <div class="container">
+        <h2 class="section-title questions__title">
+            <span>{% trans 'питання-відповіді' %}</span>
+        </h2>
+        <div class="questions__wrapper">
+            {% for question in questions %}
+                <div class="questions-item">
+                    <div class="questions-item__head">
+                        <span class="accord-border" style="background-color: #{{question.backgrouncolor}}
+                        "></span>
+                        {{question.questiontext}}
+                        <svg width="11" height="6" viewbox="0 0 11 6" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.03577 5.8855C6.25713 5.8855 6.42315 5.78598 6.58917 5.68648L10.6843 2.25365C11.0164 1.95514 11.0717 1.5074 10.795 1.15915C10.463 0.860641 9.9649 0.810884 9.57753 1.05964C9.57753 1.05964 9.57753 1.05963 9.52219 1.10938L5.98043 4.0447L2.43868 1.10938C2.10664 0.810871 1.55324 0.810871 1.2212 1.10938C0.889158 1.40788 0.889158 1.9054 1.2212 2.20391C1.2212 2.20391 1.2212 2.2039 1.27654 2.25365L5.42703 5.68648C5.59305 5.78598 5.81441 5.8855 6.03577 5.8855Z" fill="inherit"/>
+                        </svg>
+                    </div>
+                    <div class="questions-item__body">
+                        <div class="questions-item__text">
+                            <p>
+                                <strong>{% trans 'Відповідь' %}</strong>
+                            </p>
+                            <p>
+                                {{question.answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

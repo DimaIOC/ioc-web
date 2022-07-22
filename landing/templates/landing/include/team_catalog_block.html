@@ -1,0 +1,58 @@
+{% load static i18n %}
+<section class="team-catalog">
+    <div class="container">
+        <h2 class="team-catalog__title section-title">
+            <span>{% trans 'Керівництво' %}</span>
+        </h2>
+        <div class="teammeate">
+            {% for member in team %}
+            {% if member.stage == 1 %}
+                <div class="teammeate__wrapper">
+                    <div class="teammeate__content">
+                        <div class="teammeate__photo">
+                            <img src="
+                                                                                {{ member.image.url }}
+                                                                                " alt="photo"/>
+                        </div>
+                        <div class="teammeate__descr">
+                            <div class="teammeate__status">
+                                {{ member.position }}
+                            </div>
+                            <div class="teammeate__name">{{ member.memberfullname }}</div>
+                        </div>
+                    </div>
+                    <div class="teammeate-info">
+                        <div class="teammeate-info__item">
+                            <div class="teammeate-info__logo">
+                                <img src="{% static 'landing/img/icon/user.svg' %}" alt="user"/>
+                            </div>
+                            <div class="teammeate-info__val">{{ member.position }}</div>
+                        </div>
+                        <div class="teammeate-info__item">
+                            <div class="teammeate-info__logo">
+                                <img src="{% static 'landing/img/icon/email.svg' %}" alt="email"/>
+                            </div>
+                            <a href="mailto:tkhomosh@ioc.gov.ua" class="teammeate-info__val">{{ member.mail }}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="team-catalog__wrapper">
+            {% for member in team %}
+                {% if member.stage != 1 %}
+                    <a href="#" class="team-catalog__item">
+                        <div class="teammeate__photo">
+                            <img src="{{ member.image.url }}" alt="photo"/>
+                        </div>
+                        <div class="team-catalog__info">
+                            <div class="team-catalog__status">{{ member.position }}</div>
+                            <div class="team-catalog__name">{{ member.memberfullname }}</div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

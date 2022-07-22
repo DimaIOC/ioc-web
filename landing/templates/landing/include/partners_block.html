@@ -1,0 +1,26 @@
+{% load static %}
+{% load i18n %}
+<section id="partners" class="partners">
+    <div class="container">
+        <h2 class="section-title partners__title">
+            <span>{% trans 'Наші партнери' %}</span>
+        </h2>
+        <div class="partners__wrapper">
+            <div class="partners-slider swiper">
+                <div class="swiper-wrapper">
+                    {% for partner in partners %}
+                        <div class="swiper-slide partners-item" style="background-image: url({{ partner.image.url }})"></div>
+
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="partners-button-prev">
+                <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow"/>
+            </div>
+            <div class="partners-button-next">
+                <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow"/>
+            </div>
+        </div>
+    </div>
+</section>

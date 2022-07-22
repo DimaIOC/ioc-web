@@ -1,0 +1,32 @@
+{% load static %}
+{% load i18n %}
+<section class="news-catalog">
+    <div class="container">
+        <h2 class="news-catalog__title section-title">
+            <a href="{% url 'landing:news' %}">
+                <span>{% trans 'новини' %}</span>
+            </a>
+        </h2>
+        <div class="single-news">
+            <div class="single-news__date">{{ single_news.get_clean_date }}</div>
+            <div class="single-news__label">
+                {{ single_news.title }}
+            </div>
+            {% if single_news.image %}
+                <div class="single-news__photo">
+                    <picture>
+                        <source srcset="{{ single_news.image.url }}" media="(max-width: 768px)"/>
+                        <source srcset="{{ single_news.image.url }}"/>
+                        <img srcset="{{ single_news.image.url }}" alt="photo"/>
+                    </picture>
+                    <!-- <img src="img/news/big-news.png" alt="photo" /> -->
+                </div>
+            {% endif %}
+            <div class="single-news__content">
+                <p>
+                    {{ single_news.newstext|safe }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

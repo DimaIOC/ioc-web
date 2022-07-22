@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+<section class="questions">
+    <div class="container">
+        <h2 class="section-title questions__title">
+            <span>{% trans 'звітність' %}</span>
+        </h2>
+        <div class="questions__wrapper">
+            {% for report in reports %}
+                <div class="questions-item">
+                    <div class="questions-item__head">
+                        <span class="accord-border" style="background-color: #5cc7ff"></span>
+                        {{ report.title}}
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.03577 5.8855C6.25713 5.8855 6.42315 5.78598 6.58917 5.68648L10.6843 2.25365C11.0164 1.95514 11.0717 1.5074 10.795 1.15915C10.463 0.860641 9.9649 0.810884 9.57753 1.05964C9.57753 1.05964 9.57753 1.05963 9.52219 1.10938L5.98043 4.0447L2.43868 1.10938C2.10664 0.810871 1.55324 0.810871 1.2212 1.10938C0.889158 1.40788 0.889158 1.9054 1.2212 2.20391C1.2212 2.20391 1.2212 2.2039 1.27654 2.25365L5.42703 5.68648C5.59305 5.78598 5.81441 5.8855 6.03577 5.8855Z" fill="inherit"/>
+                        </svg>
+                    </div>
+                    <div class="questions-item__body">
+                        <div class="requsites-data__item">
+                            {% for subtype in report.subtypereport.all %}
+                                <div class="requsites-data__head">
+                                    <span class="requsites-data__label">{{ subtype.title }}</span>
+                                    <div class="requsites-data__line"></div>
+                                    <div class="requsites-data__arrow">
+                                        <svg width="11" height="6" viewBox="0 0 11 6" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.03577 5.8855C6.25713 5.8855 6.42315 5.78598 6.58917 5.68648L10.6843 2.25365C11.0164 1.95514 11.0717 1.5074 10.795 1.15915C10.463 0.860641 9.9649 0.810884 9.57753 1.05964C9.57753 1.05964 9.57753 1.05963 9.52219 1.10938L5.98043 4.0447L2.43868 1.10938C2.10664 0.810871 1.55324 0.810871 1.2212 1.10938C0.889158 1.40788 0.889158 1.9054 1.2212 2.20391C1.2212 2.20391 1.2212 2.2039 1.27654 2.25365L5.42703 5.68648C5.59305 5.78598 5.81441 5.8855 6.03577 5.8855Z" fill="inherit"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                {% for report in subtype.reports.all%}
+                                    <div class="requsites-data__body">
+                                        <button class="btn-reset download">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.02976 6.75294L6.65329 10.3765C6.90035 10.6235 7.22976 10.6235 7.47682 10.3765L11.1004 6.75294C11.3474 6.50589 11.3474 6.17647 11.1004 5.92941C10.8533 5.68236 10.4415 5.68236 10.2768 5.92941L7.72388 8.48236L7.72388 0.576475C7.72388 0.247063 7.47682 4.43539e-06 7.14741 4.4066e-06C6.818 4.3778e-06 6.57094 0.247063 6.57094 0.576475L6.57094 8.48236L4.018 5.92941C3.93564 5.84706 3.77094 5.76471 3.60623 5.76471C3.44153 5.76471 3.27682 5.84706 3.19447 5.92941C2.7827 6.17647 2.7827 6.50588 3.02976 6.75294Z" fill="#2F80ED"/>
+                                                <path d="M13.5882 8.83228C13.2588 8.83228 13.0118 9.07933 13.0118 9.40875V12.7852H1.23529V9.40875C1.23529 9.07933 0.988235 8.83228 0.658824 8.83228C0.329412 8.83228 0 9.07933 0 9.40875V13.444C0 13.7735 0.247059 14.0205 0.576471 14.0205H13.5882C13.9176 14.0205 14.1647 13.7735 14.1647 13.444V9.40875C14.1647 9.07933 13.9176 8.83228 13.5882 8.83228Z" fill="#2F80ED"/>
+                                            </svg>
+                                            <a href="{{ report.file.url }}" target="_blank">
+                                                <span>{{ report.title }}</span>
+                                            </a>
+                                        </button>
+                                    </div>
+                                {% endfor %}
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

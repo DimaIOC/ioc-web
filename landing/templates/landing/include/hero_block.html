@@ -1,0 +1,94 @@
+{% load i18n %}
+{% load static %}
+{% load change_lang from utils %}
+{% get_available_languages as languages %}
+{% get_current_language as CUR_LANG_CODE %}
+<div class="hero">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__burger">
+                    <div class="burger__icon icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <a href="{% url 'landing:index' %}" class="header__logo">
+                    <img src="{% static 'landing/img/logo.svg' %}" alt="logo"/>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__elem">
+                            <a scroll-href="#services" class="header__link">{% trans 'Наші послуги' %}</a>
+                        </li>
+                        <li class="header__elem">
+                            <a scroll-href="#donat" class="header__link">{% trans 'Донейшн' %}</a>
+                        </li>
+                        <li class="header__elem">
+                            <a scroll-href="#partners" class="header__link">{% trans 'Наші партнери' %}</a>
+                        </li>
+                        <li class="header__elem">
+                            <a scroll-href="#questions" class="header__link">{% trans 'Питання - Відповідь' %}</a>
+                        </li>
+                        <li class="header__elem">
+                            <a href="{% url 'landing:about' %}" class="header__link">{% trans 'Про нас' %}</a>
+                        </li>
+                        <li class="header__elem">
+                            <a href="{% url 'landing:team' %}" class="header__link">{% trans 'Керівництво' %}</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <div class="header__lang">
+                        {% for code, name in languages %}
+                            <div class="header__lang-elem current{% if code == CUR_LANG_CODE %} current{% endif %}">
+                                <a href="{% change_lang code %}">{{ name }}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <a href="https://edopomoga.gov.ua/" class="header__btn btn" target="_blank">{% trans 'єДопомога' %}</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <nav class="header-mobile__nav">
+                <ul class="header-mobile__list">
+                    <li class="header-mobile__elem">
+                        <a scroll-href="#services" class="header__link">{% trans 'Наші послуги' %}</a>
+                    </li>
+                    <li class="header-mobile__elem">
+                        <a scroll-href="#donat" class="header__link">{% trans 'Донейшн' %}</a>
+                    </li>
+                    <li class="header-mobile__elem">
+                        <a scroll-href="#partners" class="header__link">Наші партнери</a>
+                    </li>
+                    <li class="header-mobile__elem">
+                        <a scroll-href="#questions" class="header__link">{% trans 'Питання - Відповідь' %}</a>
+                    </li>
+                    <li class="header-mobile__elem">
+                        <a href="{% url 'landing:about' %}" class="header__link">{% trans 'Про нас' %}</a>
+                    </li>
+                    <li class="header-mobile__elem">
+                        <a href="{% url 'landing:team' %}" class="header__link">{% trans 'Керівництво' %}</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://edopomoga.gov.ua/" class="header-mobile__btn btn" target="_blank">{% trans 'єДопомога' %}</a>
+        </div>
+    </header>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__name">{% trans 'ДП "ІОЦ МІНСОЦПОЛІТИКИ УКРАЇНИ"' %}</div>
+            <h1 class="hero__title">
+                {% trans 'Державне підприємство «інформаційно обчислювальний центр Міністерства соціальной політики України»' %}
+            </h1>
+            <div class="hero__descr">{% trans 'Створення. Впровадження. Підтримка...' %}</div>
+            <a href="{% url 'landing:about' %}" class="hero__btn btn">{% trans 'Про нас' %}</a>
+        </div>
+        <div class="hero__img">
+            <img src="{% static 'landing/img/hero-figure.svg' %}" alt="big-logo"/>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+{% load i18n %}
+{% load static %}
+{% load change_lang from utils %}
+{% get_available_languages as languages %}
+{% get_current_language as CUR_LANG_CODE %}
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <a href="/">
+                        <img src="{% static 'landing/img/logo.svg' %}" alt="logo"/>
+                    </a>
+                    <div class="header__lang">
+                        {% for code, name in languages %}
+                            <a href="{% change_lang code %}" class="header__lang-elem current">{{ name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:index' %}#services" class="footer__link">{% trans 'Наші послуги' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:index' %}#donat" class="footer__link">{% trans 'Донейшн' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:index' %}#questions" class="footer__link">{% trans 'Питання- Відповідь' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a data-popup="#information" class="footer__link">{% trans 'Інформація' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:about' %}" class="footer__link">{% trans 'Про нас' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:team' %}" class="footer__link">{% trans 'Керівництво' %}</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a href="{% url 'landing:news' %}" class="footer__link">{% trans 'Блог' %}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer-contacts">
+                    <div class="footer-contacts__item">
+                        <div class="footer-contacts__label">{% trans 'Приймальня:' %}</div>
+                        <a href="mailto:office@ioc.gov.ua" class="footer-contacts__value">office@ioc.gov.ua</a>
+                    </div>
+                    <div class="footer-contacts__item">
+                        <div class="footer-contacts__label">{% trans 'Технічна підтримка:' %}</div>
+                        <a href="mailto:callcenter@ioc.gov.ua" class="footer-contacts__value">callcenter@ioc.gov.ua</a>
+                    </div>
+                    <div class="footer-contacts__item">
+                        <div class="footer-contacts__label">{% trans 'Телефон:' %}</div>
+                        <a href="tel:0444941910" class="footer-contacts__value">(044)-494-19-10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copy">©
+                {% trans '2022 ДП "ІОЦ Мінсоцполітики України"' %}</div>
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/ICC.MSP" target="_blank" class="footer-social">
+                    <img src="{% static 'landing/img/icon/fb.svg' %}" alt="fb"/>
+                </a>
+                <a href="https://www.linkedin.com/company/ioc-gov-ua/" target="_blank" class="footer-social">
+                    <img src="{% static 'landing/img/icon/in.svg' %}" alt="in"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+<section class="news">
+    <div class="container">
+        <div class="news__head">
+            <h2 class="section-title news__title">
+                <span>{% trans 'новини' %}</span>
+            </h2>
+            <a href="{% url 'landing:news' %}" class="news__link">
+                <span>{% trans 'Всі новини' %}</span>
+                <img src="{% static 'landing/img/icon/arrow-slide.svg' %}" alt="arrow"/>
+            </a>
+        </div>
+        <div class="news__wrapper">
+            <div class="current-news">
+                {% if news_large.image %}
+                    <div class="current-news__photo">
+                        <img src="{{ news_large.image.url }}" alt="news"/>
+                    </div>
+                {% endif %}
+                <div class="current-news__content">
+                    <div class="current-news__date">{{ news_large.get_clean_date }}</div>
+                    <div class="current-news__title">
+                        {{ news_large.title }}
+                    </div>
+                </div>
+            </div>
+            <div class="others-news">
+                {% for i in news %}
+                    <div class="news-item">
+                        <div class="news-item__date">{{ i.get_clean_date }}</div>
+                        <div class="news-item__descr">
+                            <a href="{{ i.get_absolute_url }}">
+                                <p>
+                                    {{ i.title }}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
