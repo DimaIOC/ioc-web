@@ -906,6 +906,7 @@ textarea {
 
 .text-block__text p {
   text-indent: 20px;
+  font-size: 18px;
 }
 
 .requsites__footer-label {

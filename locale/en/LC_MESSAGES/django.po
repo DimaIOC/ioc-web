@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 21:41+0300\n"
-"PO-Revision-Date: 2022-07-21 16:53-0551\n"
+"PO-Revision-Date: 2022-07-27 09:09-0551\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -59,7 +59,7 @@ msgid ""
 "соціальної політики України»"
 msgstr ""
 "State Enterprise \"Information and Computing center of The Ministry of "
-"social policy of Ukraine\""
+"social policy of Ukraine state enterprise\""
 
 #: landing/templates/landing/include/about_block.html:23
 #, fuzzy
@@ -121,7 +121,7 @@ msgstr "donate"
 
 #: landing/templates/landing/include/donate_block.html:15
 msgid "Ми просимо підтримки зараз, щоб мати можливість допомагати і надалі."
-msgstr "We are asking for your support now so we can continue to help."
+msgstr "We are requesting support now to be able to help in the future."
 
 #: landing/templates/landing/include/donate_block.html:18
 msgid ""
@@ -275,7 +275,7 @@ msgstr "phone"
 
 #: landing/templates/landing/include/footer.html:64
 msgid "2022 ДП \"ІОЦ Мінсоцполітики України\""
-msgstr "2022 SE \"ICC OF THE MINISTRY OF SOCIAL POLICY\""
+msgstr "2022 SE \"ICC OF THE MINISTRY OF SOCIAL POLICY OF UKRAINE\""
 
 #: landing/templates/landing/include/full_news_block.html:6
 #: landing/templates/landing/include/news_block.html:7
@@ -315,7 +315,7 @@ msgstr ""
 
 #: landing/templates/landing/include/hero_block.html:87
 msgid "Створення. Впровадження. Підтримка..."
-msgstr "Building. Implementation. Supporting..."
+msgstr "Creation. Implementation. Support..."
 
 #: landing/templates/landing/include/news_block.html:10
 msgid "Всі новини"
@@ -323,7 +323,7 @@ msgstr "All news"
 
 #: landing/templates/landing/include/popups_block.html:14
 msgid "ДОНАТ"
-msgstr "DONAT"
+msgstr "DONATE"
 
 #: landing/templates/landing/include/popups_block.html:17
 msgid ""
@@ -333,12 +333,11 @@ msgid ""
 "країни та в сусіднікраїни. Мільйони українців залишились без житла, грошей, "
 "одягу, їжі та інших елементарнихречей."
 msgstr ""
-"Currently, Ukraine is experiencing the most terrible test for its entire "
-"independence - a full-scale war on the part of the Russian Federation, which"
-" led to the death of people, injuries and mass displacement of the civilian "
-"population throughout the country and to neighboring countries. Millions of "
-"Ukrainians were left without housing, money, clothes, food and other basic "
-"things."
+"Ukraine is now experiencing its worst ordeal in its entireindependence - a "
+"full-scale war on the part of the Russian Federation, which led to the death"
+" of people, injuries and mass displacement of the civilian population "
+"throughout the country and to neighboring countries. Millions of Ukrainians "
+"were left without housing, money, clothes, food and other basic things."
 
 #: landing/templates/landing/include/popups_block.html:20
 msgid ""
@@ -540,14 +539,14 @@ msgstr "Software testing and commissioning"
 msgid ""
 "Надання доступа к програмному заобеспечению органов соціального захисту "
 "населення"
-msgstr "Providing access to the software of social protection bodies"
+msgstr "Providing access to software to social welfare agencies"
 
 #: landing/templates/landing/include/services_block.html:32
 #: landing/templates/landing/include/services_works_block.html:32
 msgid ""
 "Обработка информации и начисление соціальних дотаций, пособий, субсидий"
 msgstr ""
-"Information processing and calculation of social grants, allowances, "
+"Information processing and calculation of social benefits, allowances, "
 "subsidies"
 
 #: landing/templates/landing/include/services_block.html:38
@@ -556,13 +555,13 @@ msgid ""
 "Доопрацювання и вдосконалення програмного замораживания відповідно до "
 "поточных змін чинного законодавства"
 msgstr ""
-"Refinement and improvement of software freezing in accordance with current "
-"changes in current legislation"
+"Updating and upgrading the software in accordance with the requirements of "
+"current changes in legislation"
 
 #: landing/templates/landing/include/services_block.html:44
 #: landing/templates/landing/include/services_works_block.html:44
 msgid "Супроводження и ведення державных реєстрів, інформаційних систем"
-msgstr "Support and maintenance of state registers, information systems"
+msgstr "Maintenance and support of state registries and information systems."
 
 #: landing/templates/landing/include/services_works_block.html:6
 msgid "Як це працює?"
@@ -581,7 +580,7 @@ msgstr ""
 msgid "Головна"
 msgstr "Main"
 
-#: landing/views.py:50
+#: landing/views.py:50 landing/templates/landing/include/hero_block.html:35
 msgid "Новини"
 msgstr "News"
 

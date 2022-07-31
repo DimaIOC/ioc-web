@@ -3,7 +3,6 @@ from django.shortcuts import reverse
 from datetime import datetime
 from django.utils.translation import gettext as _
 
-
 class Questions(models.Model):
     questiontext = models.CharField(max_length=255)
     published = models.DateTimeField(default=datetime.now)

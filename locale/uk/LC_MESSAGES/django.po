@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 21:41+0300\n"
-"PO-Revision-Date: 2022-07-07 00:25-0500\n"
+"PO-Revision-Date: 2022-07-25 15:29-0551\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -448,7 +448,7 @@ msgstr ""
 #: landing/templates/landing/include/services_block.html:20
 #: landing/templates/landing/include/services_works_block.html:20
 msgid "Тестування и Ведення в эксплуатации програмного обеспечения"
-msgstr "Тестування та Ведення в експлуатацію програмного забезпечення"
+msgstr "Тестування та введення в експлуатацію програмного забезпечення"
 
 #: landing/templates/landing/include/services_block.html:26
 #: landing/templates/landing/include/services_works_block.html:26
